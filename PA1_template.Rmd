@@ -1,25 +1,23 @@
+# Reproducible Research: Peer Assessment 1
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+title: "PA_Template1"
+output: html_document
 ---
 
+This is an R Markdown document for the first peer assessment. 
 
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
+## Loading and preprocessing the data 
+Make sure to copy the input file activity.csv is copied to the working directory
 
 
+```{r}
+steps <- read.csv("activity.csv")
+```
 
-## What is the average daily activity pattern?
+You can also embed plots, for example:
 
+```{r, echo=FALSE}
+plot(cars)
+```
 
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
